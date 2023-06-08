@@ -1,0 +1,429 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: #3CF;
+}
+.body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.video{
+    position: fixed;
+    z-index: -1;
+    object-fit: cover;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+}
+
+em{
+    color: #FC3;
+    text-decoration: wavy;
+}
+.glavni-header {
+    background-color: rgba(22,34,57,0.75);
+    height: 80px;
+    position: fixed;
+    z-index: 12;
+    width: 100%;
+    top: 0;
+}
+.glavni-header .logo {
+    float: left;
+    line-height: 80px;
+    padding-left: 60px;
+    
+}
+.glavni-header .logo a em {
+    font-style: normal;
+    color: #f5a425;
+}
+.glavni-header .logo {
+    padding-left: 30px !important;
+
+}   
+
+.footer1{
+    background-color: rgba(22,34,57,0.75);
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    z-index: 12;
+}
+
+.dno{
+    justify-content: center;
+    font-size: 15px;
+    font-family: sans-serif;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.kontenjer {
+    position: absolute;
+    top: 80px; 
+    bottom: 60px; 
+    left: 0;
+    right: 0;
+    background-color: transparent; 
+    
+}
+.navigacija {
+    top: 80px;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-image: url("slike-video/pozadina.jpg");
+    background-size: contain; 
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+}
+
+.navigacija button {
+
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    background-color: #3CF;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.navigacija button:hover{
+    color: #FFF;
+}
+
+.sadrzaj {
+    position: absolute;
+    height: fit-content;
+    top: 0px;
+    left: 200px;
+    right: 0;
+    bottom: 0px;
+    background-color: gray;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 70px;
+}
+
+.mapa{
+    position: absolute;
+    top: 80px;
+    left: 200px;
+    right: 0;
+    bottom: 60px;
+    background-color: #FFF;
+    padding: 20px;
+}
+
+.mapa iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+.onama{
+    position: absolute;
+    top: 80px;
+    left: 200px;
+    right: 0;
+    bottom: 60px;
+    background-color: #FFF;
+    padding: 20px;
+}
+
+.profil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-right: 20px;
+    text-align: center;
+    float: right;
+}
+
+
+.profilIme{
+    
+    padding-left: 10px;
+}
+
+#ime{
+    color: #FFF;
+}
+
+#naslovonama{
+    color: black;
+}
+
+#tekstonama{
+    color: black;
+    
+}
+
+.Prvi-red{
+    max-width: 300px;
+    flex: 1 1 210px;
+    text-align: center;
+    height: 400px;
+    border: 1px solid lightgray;
+    margin: 20px;
+}
+.Treci-red{
+    position: absolute;
+    height: 33.33%;
+    bottom: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    padding: 10px;
+    margin: 0 auto;
+    right: 0px;
+}
+.Drugi-red{
+    position: absolute;
+    height: 33.33%;
+    width: 100%;
+    top:211.97px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    right: 0px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.kontakt{
+    position: absolute;
+    top: 80px;
+    left: 200px;
+    right: 0;
+    bottom: 60px;
+    background-color: gray;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+  form#kontakti{
+    background: #3c3c3c;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+    justify-content: center;
+  }
+  form h3{
+    color: #f5a425;
+    font-weight: 800;
+    margin-bottom: 20px;
+  }
+  form input, form textarea{
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    background: black;
+    font-size: 16px;
+  }
+  form button{
+    padding: 15px;
+    background: rgb(0, 102, 136);
+    color: #f5a425;
+    font-size: 18px;
+    border:0;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20 auto 0;
+    border-radius: 30px;
+  }
+
+.navigacija audio{
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+
+
+/* css kod za sadrzaj tj listu proizvoda */
+
+.card {
+    max-width: 275px;
+    flex: 1 1 275px;
+    text-align: center;
+    height: 400px;
+    border: 1.5px solid black;
+    margin: 15px;
+    margin-top: 7px;
+    background-color: rgba(211, 211, 211, 0.478);
+    border-radius: 10px;
+}
+
+.card .image{
+    height: 50%;
+    margin-bottom: 15px;
+}
+.card .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card .caption{
+    padding-left: 1em;
+    text-align: left;
+    line-height: 3em;
+    height: 25%;
+}
+.card .caption p{
+    font-size: 1.5rem;
+    color: black;
+}
+
+.card .caption .rate{
+    display: flex;
+}
+.card .caption .rate i{
+    color: gold;
+    margin-left: 2px;
+}
+.card .caption .rate a{
+    width: 50%;
+}
+
+.card .caption .cijena b{
+    color: black;
+}
+
+.card button{
+    border: 2px solid black;
+    padding: 1em;
+    width: 80%;
+    cursor: pointer;
+    margin-top: 2em;
+    font-weight: bold;
+    position: relative;
+    border-radius: 10px;
+    color: black;
+}
+
+.card button::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    background-color: black;
+    transition: all .5s;
+    margin: 0;
+}
+
+.card button::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    background-color: black;
+    transition: all .5s;
+}
+
+.card button:hover::before{
+    width: 30%;
+}
+
+.card button:hover::after{
+    width: 30%;
+}
+
+
+/*---------------------------------------- */
+
+#badge{
+    position: absolute;
+    left: auto;
+    padding: 0 4px;
+    min-width: 8px;
+    max-width: 18px;
+    height: 16px;
+    border: 2px solid #ffffff;
+    border-radius: 22px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: red;
+    background-color: white;
+    right: 160px;
+}
+
+#kon{
+    display: flex;
+    padding-left: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+#rijec{
+    color: black;
+}
+
+#kon b{
+    color: black;
+}
+
+#red{
+    margin-right: 10px;
+}
+
+
+@media only screen and (max-width: 400px){
+    .kontenjer{
+        display: flex;
+        flex-direction: column; 
+        max-width: 400px;
+    }
+    .navigacija{
+        max-width: 400px;
+        width: 100%;
+    }
+
+    .sadrzaj{
+        max-width: 400px;
+        width: 100%;
+    }
+    .col{
+        display: block;
+        width: 100%;
+    }
+
+    .profil{
+        display: none;
+    }
+} 

@@ -1,0 +1,411 @@
+[class*="col-"]{
+    float: left;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: #3CF;
+    background-color: transparent;
+    border: 0px;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+
+.pozadina{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(12,3,51,0.3), rgba (12,3,51, 0.3));
+    position: relative;
+    top: 100px;
+}
+
+.video{
+    position: fixed;
+    z-index: -1;
+    object-fit: cover;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+}
+
+em{
+    color: #FC3;
+    text-decoration: wavy;
+}
+
+a {
+	color: #FC3;
+    text-decoration: none;
+}
+
+a:hover {
+	color: #FC3;
+    text-decoration: none;
+}
+
+ul {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+p {
+    font-size: 13px;
+    line-height: 22px;
+}
+
+.main-header .logo {
+    padding-left: 30px !important;
+
+}
+
+.main-menu {
+    padding-right: 30px!important;
+}
+
+.main-menu li {
+    margin-left: 40px!important;
+}
+
+.main-header {
+    background-color: rgba(22,34,57,0.75);
+    height: 80px;
+    position: fixed;
+    z-index: 12;
+    width: 100%;
+    top: 0;
+}
+
+.main-header .logo {
+    float: left;
+    line-height: 80px;
+    padding-left: 60px;
+    
+}
+
+.main-header .logo a {
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #fff;
+}
+
+.main-header .logo a em {
+    font-style: normal;
+    color: #f5a425;
+}
+
+.main-menu {
+    float: right;
+    padding-right: 60px;
+}
+.main-menu li {
+    display: inline-block;
+    line-height: 79px;
+    margin-left: 15px;
+    position: relative;
+}
+
+img{
+    border-radius: 50px;
+    width: 70px;
+    height: 70px;
+}
+
+.dugme a{
+    border: 2px;
+    border-radius: 15px;
+    color: #f5a425;
+    background-color: #3f3f3fb9;
+    padding: 13px 30px;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.dugme a:hover{
+
+    color: #fff;
+
+}
+.dugme{
+    margin-bottom: 15px;
+    text-align: center;
+    justify-content: center;
+    font-family: sans-serif;
+    font-size: 25px;
+}
+
+.dugme img{
+    margin-bottom: 10px;
+}
+
+.dugme:hover{
+    width: 150px;
+    height: 150px;
+    background-color: lightgray;
+    border-radius: 20px;
+    scale: 0.75;
+    padding-top: 16px;
+    transition: 1s;
+}
+
+#dugme1{
+    color: antiquewhite;
+    font-weight: bold ;
+    font-size: 20px;
+}
+#dugme1:hover{
+    color: black;
+}
+
+.footer{
+    background-color: rgba(22,34,57,0.75);
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    z-index: 12;
+}
+
+.dno{
+    justify-content: center;
+    font-size: 15px;
+    font-family: sans-serif;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.sadrzaj{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.poruka{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    
+}
+
+.poruka h1{
+    color: antiquewhite;
+    font-size: 50px;
+}
+ 
+
+.proizvodi{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#username{
+    color: antiquewhite;
+}
+
+.sadrzaj .dugmad{
+    display: flex;
+    flex-direction: row;
+}
+
+.card {
+    max-width: 200px;
+    flex: 1 1 200px;
+    text-align: left;
+    /* height: 150px; */
+    border: 1.5px solid black;
+    margin: 15px;
+    margin-top: 7px;
+    background-color: rgba(211, 211, 211, 0.478);
+    border-radius: 10px;
+}
+
+.card p{
+    padding: 5px 0 0 15px;
+    font-size: 18px;
+    color: black;
+    border: 1px solid black;
+    background-color: lightgray;
+}
+/* 
+.card img{
+    display: flex;
+    justify-content: center;
+} */
+
+.card .image{
+    height: 40%;
+}
+.card .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+
+.card .ime{
+    border-radius: 10px 10px 0 0;
+}
+
+.card .rol{
+    border-radius: 0px 0px 10px 10px;
+}
+
+.card b{
+    color: black;
+    padding-top: 10px;
+}
+
+.card button{
+    border: 2px solid black;
+    padding: 1em;
+    width: 80%;
+    cursor: pointer;
+    margin-top: 2em;
+    font-weight: bold;
+    position: relative;
+    border-radius: 10px;
+    color: black;
+}
+
+.card button::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    background-color: black;
+    transition: all .5s;
+    margin: 0;
+}
+
+.card button::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    background-color: black;
+    transition: all .5s;
+}
+
+.card button:hover::before{
+    width: 30%;
+}
+
+.card button:hover::after{
+    width: 30%;
+}
+
+.card .dug{
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.card .dug .ukloni{
+    text-align: center;
+}
+
+.kontakt{
+    background-color: transparent;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  form#kontakti{
+    background: #3c3c3c;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+    justify-content: center;
+  }
+  form h3{
+    color: #f5a425;
+    font-weight: 800;
+    margin-bottom: 20px;
+  }
+  form input, form textarea{
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    background: black;
+    font-size: 16px;
+  }
+  form button{
+    padding: 15px;
+    background: rgb(0, 102, 136);
+    color: #f5a425;
+    font-size: 18px;
+    border:0;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20 auto 0;
+    border-radius: 30px;
+
+    
+  }
+
+
+
+@media only screen and (max-width: 400px) {
+  .main-menu{
+    display: flex;
+    
+    float: left;
+  }
+
+  form#kontakti{
+    margin-top: 40px;
+  }
+
+  .mapa{
+    width: 320px;
+    height: 300px;
+  }
+
+  .iframe-wrapper {
+    width: 400px;
+    height: 300px;
+  }
+  .iframe-wrapper iframe{
+    width: 400px;
+    height: 300px;
+  }
+}

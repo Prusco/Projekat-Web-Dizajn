@@ -1,0 +1,361 @@
+[class*="col-"]{
+    float: left;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: #3CF;
+}
+
+.pozadina{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(12,3,51,0.3), rgba (12,3,51, 0.3));
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video{
+    position: absolute;
+    z-index: -1;
+    object-fit: cover;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+}
+
+em{
+    color: #FC3;
+    text-decoration: wavy;
+}
+
+a {
+	color: #FC3;
+    text-decoration: none;
+}
+
+a:hover {
+	color: #FC3;
+    text-decoration: none;
+}
+
+ul {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+p {
+    font-size: 13px;
+    line-height: 22px;
+}
+
+.main-header .logo {
+    padding-left: 30px !important;
+
+}
+
+.main-menu {
+    padding-right: 30px!important;
+}
+
+.main-menu li {
+    margin-left: 40px!important;
+}
+
+.main-header {
+    background-color: rgba(22,34,57,0.75);
+    height: 80px;
+    position: absolute;
+    z-index: 12;
+    width: 100%;
+    top: 0;
+}
+
+.main-header .logo {
+    float: left;
+    line-height: 80px;
+    padding-left: 60px;
+    
+}
+
+.main-header .logo a {
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #fff;
+}
+
+.main-header .logo a em {
+    font-style: normal;
+    color: #f5a425;
+}
+
+.main-menu {
+    float: right;
+    padding-right: 60px;
+}
+.main-menu li {
+    display: inline-block;
+    line-height: 79px;
+    margin-left: 15px;
+    position: relative;
+}
+
+img{
+    border-radius: 50px;
+}
+
+.slika{
+    background-color: transparent;
+    padding-bottom: 40px;
+    scale: 0.9;
+}
+.slika:hover{
+    scale: 1.0;
+}
+.dugme a{
+    border: 2px;
+    border-radius: 15px;
+    color: #f5a425;
+    background-color: #3f3f3fb9;
+    padding: 13px 30px;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.dugme a:hover{
+
+    color: #fff;
+
+}
+.dugme{
+    
+    text-align: center;
+    justify-content: center;
+    font-family: sans-serif;
+    font-size: 25px;
+}
+
+
+.footer{
+    background-color: rgba(22,34,57,0.75);
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    z-index: 12;
+}
+
+.dno{
+    justify-content: center;
+    font-size: 15px;
+    font-family: sans-serif;
+    padding-top: 20px;
+    text-align: center;
+}
+
+
+/*Ovo je sto sam ja radio (Imad Hubljar)*/
+  /* .Pozadina{
+    width: 100%;
+    height: 100vh;
+    background-color: gray;
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  } */
+
+  
+
+  /* .Login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px);
+  } */
+
+  /* .form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+  } */
+
+  .tab-group {
+    list-style: none;
+    margin: 0 -10px;
+    padding: 0;
+  }
+
+  .tab-group li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+
+  .tab-group a {
+    display: block;
+    padding: 10px;
+    color: #666;
+    font-weight: bold;
+    background-color: #eee;
+    border-radius: 5px;
+  }
+
+  .tab-group a.active {
+    color: #fff;
+    background-color: #333;
+  }
+
+  /* .login input[type="text"],
+  .login input[type="email"],
+  .login input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+  } */
+
+  .login input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .login input[type="submit"]:hover {
+    background-color: #555; 
+  }
+  
+  .mapa {
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 75%;
+    box-shadow: black;
+    
+  }  
+
+  .mapa iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+.field-wrap{
+    padding-top: 20px;
+}
+
+.field-wrap-pass {
+    padding-top: 12px;
+}
+
+.field-wrap-pass label{
+  padding-right: 32px;
+}
+
+.forgot{
+  padding-top: 15px; 
+  padding-bottom: 20px;
+}
+
+.button-block{
+  border: 2px;
+  border-radius: 3px;
+  background-color: #666;
+  color: #000;
+  padding: 10px 30px;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+.button-block:hover{
+  color: #fff ;
+}
+
+#kon{
+  display: flex;
+  padding-left: 20px;
+  align-items: center;
+  text-align: center;
+}
+
+#naslovonama{
+  color: #f5a425;
+}
+
+#tekstonama{
+  color: #f5a425;
+  
+}
+
+#rijec{
+  color: #f5a425;
+}
+
+#kon b{
+  color: #f5a425;
+}
+
+#red{
+  margin-right: 10px;
+}
+
+@media only screen and (max-width: 400px) {
+  .main-menu{
+    display: flex;
+    
+    float: left;
+  }
+
+  form#kontakti{
+    margin-top: 40px;
+  }
+
+  .mapa{
+    width: 320px;
+    height: 300px;
+  }
+
+  .iframe-wrapper {
+    width: 400px;
+    height: 300px;
+  }
+  .iframe-wrapper iframe{
+    width: 400px;
+    height: 300px;
+  }
+}

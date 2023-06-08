@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <script>
+
+        const urlParams = new URLSearchParams(window.location.search);
+        const username = urlParams.get('username');
+
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('username').textContent = username;
+        });
+    </script>
+</head>
+<body>
+    <h1>Welcome, <span id="username"></span> (Admin)</h1><br>
+    Ova je samo za Admine<br>
+    <button onclick="redirectToUserPage()">User</button>
+
+    <script>
+        function redirectToUserPage() {
+            const username = document.getElementById('username').textContent;
+            const url = 'mainv2.php?username=' + encodeURIComponent(username);
+            window.location.href = url;
+        }
+    </script>
+</body>
+</html>

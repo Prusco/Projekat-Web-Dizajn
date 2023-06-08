@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prijava</title>
+<link rel="stylesheet" href="login.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+<script>
+
+  var brojac = 60;
+  var timer = setInterval(function() {
+    document.getElementById("odbrojavanje").innerHTML = brojac + "s";
+    brojac--;
+    
+    if (brojac == 0) {
+      clearInterval(timer);
+      document.getElementById("odbrojavanje").innerHTML;
+              setTimeout(function(){
+                  window.location.href = "index.html";
+              })
+    }
+    
+  }, 1000); // 1000 milliseconds = 1 second
+  
+  // function loginPage() {
+  //   var passWord = document.getElementById("password").value
+  //   var email = document.getElementById("username").value
+  //   if (email.includes("admin") && passWord.includes("admin")) {            
+  //     alert ("Login successfully");
+  //     window.location = 'register.html';
+
+  //   } else {
+  //     alert("Incorect detailed password")
+  //   }
+  // }
+
+//   var attempt = 3; // Variable to count number of attempts.
+// // Below function Executes on click of login button.
+//   function validate(){
+//     var username = document.getElementById("username").value;
+//     var password = document.getElementById("password").value;
+//     if ( username == "admin" && password == "admin"){
+//       alert ("Login successfully");
+//      // window.location.href = 'file:///C:/Users/PC/OneDrive/Radna%20površina/Online%20naručivanje%20hrane/register.html' ; Redirecting to other page.
+//       window.location.href = 'mainv2.html';
+//       return false;
+//     }
+//     else{
+//       attempt --;// Decrementing by one.
+//       alert("You have left "+attempt+" attempt;");
+//       // Disabling fields after 3 attempts.
+//       if( attempt == 0){
+//       document.getElementById("username").disabled = true;
+//       document.getElementById("password").disabled = true;
+//       document.getElementById("submit").disabled = true;
+//       return false;
+//   }
+//   }
+//   }
+
+  function show(){
+      var password = document.getElementById("password");
+      var icon = document.querySelector(".fas")
+
+      // ========== Checking type of password ===========
+      if(password.type === "password"){
+        password.type = "text";
+      }
+      else {
+        password.type = "password";
+      }
+  };
+</script>
+</head>
+<body>
+  
+        
+    <header class="main-header">
+        <div class="logo">
+            <h1><em>DELUXE</em> FOOD</h1>
+        </div>
+        <!-- <div class="timer">
+          <h1>Timer: <span id="odbrojavanje">60s</span></h1>  
+      
+      </div>  -->
+    </header>
+    <div class="Reklame left">
+      <img src="http://clipart-library.com/img/988574.gif" alt="reklama" id="lijeva_reklama">
+  </div>
+    <div class="login-page">
+      <div class="form">
+    
+        <form  action="login.php" method="post">
+          <input type="text" id="username" placeholder="username" name="username"/>
+          <input type="password" id="password" placeholder="password" name="password"/>
+          <i class="fas fa-eye oko" onclick="show()"></i> 
+          <br>
+          <br>
+          <button type="submit" name="submit" >LOGIN</button>
+          <p class="message"></p>
+        </form>
+    
+        <form class="login-form">
+          <button type="button" onclick="window.location.href='register.html'">SIGN UP</button>
+        </form>
+      </div>
+    </div>
+     
+    <div class="Reklame right">
+      <img src="https://media.tenor.com/MLQUFjGIZhsAAAAC/love-food.gif" alt="reklama" id="desna_reklama">
+    </div>
+  
+</body>
+</html>

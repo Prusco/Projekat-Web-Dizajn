@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odabir između Admin Interfejsa ili User Interfejsa</title>
+    <script>
+
+        const urlParams = new URLSearchParams(window.location.search);
+        const username = urlParams.get('username');
+
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('username').textContent = username;
+        });
+    </script>
+</head>
+<body>
+    <h1>Welcome, <span id="username"></span> (Admin)</h1>
+    <h1>Ovdje možete izabrati dal zelite Admin Interfejs ili User Interfejs</h1>
+    <button onclick="window.location.href='testadmin.html?username=' + encodeURIComponent(username)">Admin</button>
+    <button onclick="window.location.href='mainv2.php?username=' + encodeURIComponent(username)">User</button>
+    <script>
+        function redirectToUserPage() {
+            const username = document.getElementById('username').textContent;
+            const url = 'mainv2.php?username=' + encodeURIComponent(username);
+            window.location.href = url;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registacija</title>
+  <link rel="stylesheet" href="register.css" type="text/css">
+</head>
+<body>
+  <header class="main-header">
+    <div class="logo">
+      <h1><em>DELUXE</em> FOOD</h1>
+    </div>
+  </header>
+
+  <div class="Reklame left">
+    <img src="https://media.tenor.com/MLQUFjGIZhsAAAAC/love-food.gif" alt="reklama" id="lijeva_reklama">
+  </div>
+
+  <div class="login-page">
+    <div class="form">
+      <form action="baza.php" method="post">
+        <input type="text" placeholder="Ime" name="Ime" required>
+        <input type="text" placeholder="Email adresa" name="email" required>
+        <input type="text" placeholder="Odaberi username" name="username" required>
+        <input type="date" placeholder="Datum rođenja" name="datumrod" required>
+        <input type="password" id="password" placeholder="Lozinka" name="password" required>
+        <i class="fas fa-eye" onclick="show()"></i>
+        <br>
+        <br>
+        <button type="submit" name="submit" onclick="window.location.href = 'index.html'">SIGN UP</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="Reklame right">
+    <img src="http://clipart-library.com/img/988574.gif" alt="reklama" id="desna_reklama">
+  </div>
+
+</body>
+</html>

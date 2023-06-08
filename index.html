@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deluxe food</title>
+    <link rel="stylesheet" href="stil.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<style>
+    .kontakt{
+        background-color: transparent;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      form#kontakti{
+        background: #3c3c3c;
+        display: flex;
+        flex-direction: column;
+        padding: 2vw 4vw;
+        width: 90%;
+        max-width: 600px;
+        border-radius: 10px;
+        justify-content: center;
+      }
+      form h3{
+        color: #f5a425;
+        font-weight: 800;
+        margin-bottom: 20px;
+      }
+      form input, form textarea{
+        border: 0;
+        margin: 10px 0;
+        padding: 20px;
+        outline: none;
+        background: black;
+        font-size: 16px;
+      }
+      form button{
+        padding: 15px;
+        background: rgb(0, 102, 136);
+        color: #f5a425;
+        font-size: 18px;
+        border:0;
+        outline: none;
+        cursor: pointer;
+        width: 150px;
+        margin: 20 auto 0;
+        border-radius: 30px;
+
+        
+      }
+
+      @media (max-width: 768px) {
+        form#kontakti {
+          width: 80%;
+          padding: 1vw 2vw;
+        }
+        form input, form textarea {
+          padding: 10px;
+          font-size: 14px;
+        }
+        form button {
+          padding: 10px;
+          font-size: 16px;
+          width: 120px;
+          margin-top: 10px;
+        }
+      }
+      @media (max-width: 480px) {
+        form#kontakti {
+          width: 100%;
+          padding: 1vw;
+          
+        }
+    }
+</style>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("BdVpB3FJaPgOpBUF6");
+   })();
+</script>
+</head>
+<body>
+    <div class="pozadina">
+
+        <video autoplay loop muted class="video">
+            <source src="slike-video/video.mp4" type="video/mp4">
+        </video>
+
+        <header class="main-header">
+            <div class="logo">
+                <h1 class="naslov"><em>DELUXE</em> FOOD</h1>
+            </div>
+            
+            <nav id="menu" class="menu-nav">
+                <ul class="main-menu">
+                    <li><a href="#" onclick="pokazimapu()">Lokacija</a></li>
+                    <li><a href="#" onclick="pokazikontakt()">Kontakt</a></li>
+                    <li><a href="#" onclick="pokazionama()">O nama</a></li>
+                </ul>
+                
+            </nav>
+        </header>
+        <div class="mapa" >
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4306.4531090591045!2d17.382766001554305!3d44.10055910795482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475fa56ca3f17f27%3A0x2755ae6d4c26064c!2sPru%C5%A1%C4%8Dakova%20(Hasana%20Kjafije)%20d%C5%BEamija%20u%20Pruscu%2C%20graditeljska%20cjelina!5e1!3m2!1sen!2sba!4v1679264184307!5m2!1sen!2sba" width="800px" height="450px" style="border:0;"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="google"></iframe>
+        </div>
+        <div class="kontakt" style="display: none;">
+            <form id="kontakti">
+                <h3>Kontaktirajte nas</h3>
+                <input type="text" id="ime" placeholder="Ime" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="text" id="brojtelefona" placeholder="Broj telefona" required>
+                <textarea id="message" rows="5" placeholder="Upišite Vaše mlišljenje"></textarea>
+                 <button id="kontaktiposalji" onclick="sendEmail()">Pošalji</button> 
+            </form>            
+        </div>
+        <div class="onama" style="display:none">
+            <form id="nestoonama">
+                <h2 id="naslovonama">O nama</h2>
+                <a id="tekstonama">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga beatae autem praesentium suscipit nulla eligendi blanditiis voluptatibus ducimus vel eius tenetur est, sequi nam quia ex excepturi alias optio ipsa.
+                </a>
+                
+            
+                <br><br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/GS1fbWkM-3M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <br>
+                <br>
+                <h3 id="rijec">Kontaktirajte nas:</h3>
+                <div class="kontaktiraje" id="kon">
+                    <a id="red" href="https://www.instagram.com"><img src="slike-video/instagram.jpg" alt="instagram" width="30px" height="30px"></a>
+                    <a id="red" href="https://www.facebook.com"><img src="slike-video/facebook.jpg" alt="facebook" width="30px" height="30px"></a>
+                    <a id="red"> <b>ili na broj telefona</b>  </a> 
+                    <img id="red" src="slike-video/telefon.png" alt="telefon" width="30px" height="30px"> 
+                    <a ><b>+387 64 400 4014</b></a>
+                </div>
+            </form>
+        </div>
+        <div class="sadrzaj">
+   
+            <div class="slika">
+                <img src="slike-video/Delux Logo.png" width="250px" height="250px" alt="logo">
+            </div>
+            <div class="dugme">
+                <a href="login.html">PRIJAVA</a>
+            </div>  
+        </div>
+        
+        <div class="footer">
+            <p class="dno"> &#169; SI 2023</p>
+        </div>
+    </div>
+    <script>
+        function pokazimapu() {
+            var mapaDiv = document.querySelector('.mapa');
+            var sadrzajDiv = document.querySelector('.sadrzaj');
+            var pokazikontaktDiv = document.querySelector('.kontakt');
+            var onamaDiv = document.querySelector('.onama')
+            if (mapaDiv.style.display === "none") {
+                mapaDiv.style.display = "block";
+                sadrzajDiv.style.display = "none";
+                pokazikontaktDiv.style.display = "none";
+                onamaDiv.style.display = "none";
+                document.getElementById("mapa").style.display = "none";  
+
+            } else {
+                mapaDiv.style.display = "none";
+                pokazikontaktDiv.style.display = "none";
+                sadrzajDiv.style.display = "block";
+                onamaDiv.style.display = "none";
+                document.getElementById("mapa").style.display = "flex";
+            }
+        }
+        
+        function pokazikontakt(){
+            var pokazikontaktDiv = document.querySelector('.kontakt');
+            var mapaDiv = document.querySelector('.mapa');
+            var sadrzajDiv = document.querySelector('.sadrzaj')
+            var onamaDiv = document.querySelector('.onama')
+            if (pokazikontaktDiv.style.display === "none") {
+                pokazikontaktDiv.style.display = "flex";
+                sadrzajDiv.style.display = "none";
+                mapaDiv.style.display = "none";
+                onamaDiv.style.display = "none";
+                document.getElementById("kontakt").style.display = "none";  
+
+            } else {
+                pokazikontaktDiv.style.display = "none";
+                sadrzajDiv.style.display = "block";
+                mapaDiv.style.display = "none";
+                onamaDiv.style.display = "none";
+                document.getElementById("kontakt").style.display = "none";
+        }
+    }
+        function pokazionama(){
+            var pokazikontaktDiv = document.querySelector('.kontakt');
+            var mapaDiv = document.querySelector('.mapa');
+            var sadrzajDiv = document.querySelector('.sadrzaj')
+            var onamaDiv = document.querySelector('.onama')
+            if(onamaDiv.style.display==="none"){
+                onamaDiv.style.display = "flex";
+                sadrzajDiv.style.display = "none";
+                mapaDiv.style.display="none";
+                pokazikontaktDiv.style.display="none";
+                document.getElementById("onama").style.display="none";
+            }else{
+                onamaDiv.style.display = "none";
+                sadrzajDiv.style.display = "block";
+                mapaDiv.style.display="none";
+                pokazikontaktDiv.style.display="none";
+                document.getElementById("onama").style.display ="flex";
+            }
+        }
+
+        function sendEmail(){
+            var params = {
+                name: document.getElementById("ime").value,
+                email: document.getElementById("email").value,
+                brojtelefona: document.getElementById("brojtelefona").value,
+                text: document.getElementById("message").value
+                
+            };
+            const serviceID = "service_r9fqxxp";
+            const templateID = "template_3qorx3l";
+
+            emailjs
+            .send(serviceID, templateID, params)
+            .then((res) => {
+                    document.getElementById("ime").value = "";
+                    document.getElementById("email").value = "";
+                    document.getElementById("brojtelefona").value = "";
+                    document.getElementById("message").value = "";
+                    console.log(res);
+                    alert("poslana poruka");
+
+                })
+            .catch((err) => console.log(err));
+            }
+    </script>

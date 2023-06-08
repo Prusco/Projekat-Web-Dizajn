@@ -1,0 +1,128 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: #3CF;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+em{
+    color: #FC3;
+    text-decoration: wavy;
+}
+
+a {
+	color: #FC3;
+    text-decoration: none;
+}
+
+a:hover {
+	color: #FC3;
+    text-decoration: none;
+}
+
+ul {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+p {
+    font-size: 13px;
+    line-height: 22px;
+}
+
+.main-header .logo {
+    padding-left: 30px !important;
+
+}
+
+.main-menu {
+    padding-right: 30px!important;
+}
+
+.main-menu li {
+    margin-left: 40px!important;
+}
+
+.main-header {
+    background-color: rgba(22,34,57,0.75);
+    height: 80px;
+    position: absolute;
+    z-index: 12;
+    width: 100%;
+    top: 0;
+}
+
+.main-header .logo {
+    float: left;
+    line-height: 80px;
+    padding-left: 60px;
+    
+}
+
+.main-header .logo a {
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #fff;
+}
+
+.main-header .logo a em {
+    font-style: normal;
+    color: #f5a425;
+}
+
+.main-menu {
+    float: right;
+    padding-right: 60px;
+}
+.main-menu li {
+    display: inline-block;
+    line-height: 79px;
+    margin-left: 15px;
+    position: relative;
+}
+
+.footer{
+    background-color: rgba(22,34,57,0.75);
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    z-index: 12;
+}
+
+.dno{
+    justify-content: center;
+    font-size: 15px;
+    font-family: sans-serif;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.Josgovana{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.navigacija{
+    margin-top: 80px;
+    width: 23.33%;
+    float: left;
+    height: 653px;
+    background-color: #3CF;
+    color: black;
+}
+.navg{
+    justify-content: left;
+    font-size: 15px;
+    text-align: left;
+}

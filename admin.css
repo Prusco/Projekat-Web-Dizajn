@@ -1,0 +1,302 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: #3CF;
+    background-color: transparent;
+    border: 0px;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.pozadina{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(12,3,51,0.3), rgba (12,3,51, 0.3));
+    position: relative;
+    top: 100px;
+    
+}
+
+.video{
+    position: fixed;
+    z-index: -1;
+    object-fit: cover;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+}
+
+em{
+    color: #FC3;
+    text-decoration: wavy;
+}
+
+a {
+	color: #FC3;
+    text-decoration: none;
+}
+
+a:hover {
+	color: #FC3;
+    text-decoration: none;
+}
+
+ul {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+p {
+    font-size: 13px;
+    line-height: 22px;
+}
+
+.main-header .logo {
+    padding-left: 30px !important;
+
+}
+
+.main-menu {
+    padding-right: 30px!important;
+}
+
+.main-menu li {
+    margin-left: 40px!important;
+}
+
+.main-header {
+    background-color: rgba(22,34,57,0.75);
+    height: 80px;
+    position: fixed;
+    z-index: 12;
+    width: 100%;
+    top: 0;
+}
+
+.main-header .logo {
+    float: left;
+    line-height: 80px;
+    padding-left: 60px;
+    
+}
+
+.dugme a{
+    border: 2px;
+    border-radius: 15px;
+    color: #f5a425;
+    background-color: #3f3f3fb9;
+    padding: 13px 30px;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.dugme a:hover{
+
+    color: #fff;
+
+}
+.dugme{
+    margin-bottom: 15px;
+    text-align: center;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-family: sans-serif;
+    font-size: 25px;
+    max-width: 80px;
+}
+
+.dugme img{
+    margin-bottom: 10px;
+}
+
+.dugme:hover{
+    width: 150px;
+    height: 150px;
+    background-color: lightgray;
+    border-radius: 20px;
+    
+    padding-top: 16px;
+    transition: 1s;
+}
+
+#dugme1{
+    color: antiquewhite;
+    font-weight: bold ;
+    font-size: 20px;
+    max-width: 75px;
+}
+
+#dugme1 img{
+    width: 50px;
+    height: 50px;
+}
+
+#dugme1:hover{
+    color: black;
+}
+
+#dugme2 img{
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    max-width: 75px;
+}
+
+#dugme2{
+    font-weight: bold;
+    font-size: 20px;
+    color: antiquewhite;
+    background-color: transparent;
+}
+
+#dugme2:hover{
+    color: black;
+}
+
+.footer{
+    background-color: rgba(22,34,57,0.75);
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    z-index: 12;
+}
+
+.dno{
+    justify-content: center;
+    font-size: 15px;
+    font-family: sans-serif;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.sadrzaj{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 70px;
+}
+
+.poruka{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+    
+}
+
+.poruka h1{
+    color: antiquewhite;
+    font-size: 30px;
+}
+
+.korisnici{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+#username{
+    color: antiquewhite;
+}
+
+.sadrzaj .dugmad{
+    display: flex;
+    flex-direction: row;
+}
+
+.card {
+    max-width: 200px;
+    flex: 1 1 200px;
+    text-align: left;
+    /* height: 150px; */
+    border: 1.5px solid black;
+    margin: 15px;
+    margin-top: 7px;
+    background-color: rgba(211, 211, 211, 0.478);
+    border-radius: 10px;
+}
+
+.card p{
+    padding: 5px 0 0 15px;
+    font-size: 18px;
+    color: black;
+    border: 1px solid black;
+    background-color: lightgray;
+}
+
+.card .ime{
+    border-radius: 10px 10px 0 0;
+}
+
+.card .rol{
+    border-radius: 0px 0px 10px 10px;
+}
+
+.card b{
+    color: black;
+    padding-top: 10px;
+}
+
+.card button{
+    border: 2px solid black;
+    padding: 1em;
+    width: 80%;
+    cursor: pointer;
+    margin-top: 2em;
+    font-weight: bold;
+    position: relative;
+    border-radius: 10px;
+    color: black;
+}
+
+.card button::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    background-color: black;
+    transition: all .5s;
+    margin: 0;
+}
+
+.card button::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    background-color: black;
+    transition: all .5s;
+}
+
+.card button:hover::before{
+    width: 30%;
+}
+
+.card button:hover::after{
+    width: 30%;
+}
+
+.card .dug{
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.card .dug .ukloni{
+    text-align: center;
+}
